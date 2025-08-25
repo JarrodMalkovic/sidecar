@@ -17,8 +17,7 @@ const DEFAULT_RATE = Number(process.env.COSYVOICE_RATE ?? 1);
 const DEFAULT_PITCH = Number(process.env.COSYVOICE_PITCH ?? 1);
 const DEFAULT_VOL = Number(process.env.COSYVOICE_VOL ?? 50);
 const API_KEY =
-  process.env.ALIBABA_MODEL_STUDIO_API_KEY ||
-  "sk-1b066a8e6f8d4206ab93b10aacffa32e";
+  process.env.ALIBABA_MODEL_STUDIO_API_KEY 
 const SHARED_TOKEN = process.env.TTS_SIDECAR_TOKEN || "123"; // optional shared secret from Convex
 const REQUEST_TIMEOUT_MS = Number(process.env.TTS_TIMEOUT_MS ?? 30000);
 // --------------------------------
